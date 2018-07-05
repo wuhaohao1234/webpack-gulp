@@ -1,16 +1,20 @@
 ## gulp
 
-* package.json所需依赖：
+## package.json所需依赖：
 
+```
 	"babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.24.5",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.1",
     "gulp-sass": "^4.0.1"
+```
 
-- gulpfile.js配置
+### gulpfile.js配置
 
+
+```
 	const gulp = require('gulp')
 
 	const sass = require('gulp-sass')
@@ -22,6 +26,7 @@
 	gulp.task('start',function(){
 		console.log('gulp可以加载')
 	})
+
 	// sass转css
 	gulp.task('sass',function(){
 		return gulp.src('./src/sass/*.scss')
@@ -46,7 +51,7 @@
 	   gulp.watch('./src/es6/*.js', ['babel']);
 	});
 
-
+```
 
 ## 先看能不能克隆，如果可以直接cnpm  install
 
